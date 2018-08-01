@@ -1,4 +1,5 @@
 # code your #valid_move? method here
+require 'pry'
 def valid_move?(board, index)
   if board[index].to_i > 0 && board[index].to_i < 8
     true
