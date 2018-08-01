@@ -1,6 +1,7 @@
 # code your #valid_move? method here
 require 'pry'
 def valid_move?(board, index)
+  binding.pry
   if board[index].to_i > 0 && board[index].to_i < 8
     true
   elsif position_taken?(board,index) == false
